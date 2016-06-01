@@ -5,16 +5,8 @@ services:
         ports:
             - "18080:8080"
             - "50000:50000"
-        environment:
-            - INITIAL_ADMIN_PW=test
         volumes:
             - ../volumes/jenkins/jenkins_home:/var/jenkins_home
-    #jenkins:
-     #   container_name: "jenkins_container"
-      #  build: ./jenkins
-       # ports:
-        #  - "18080:8080"
-         # - "50000:50000"
 
 #    nginx:
 #        build: /nginx
