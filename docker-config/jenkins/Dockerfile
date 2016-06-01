@@ -1,0 +1,1 @@
+FROM jenkinsci/jenkins:2.0-rc-1

@@ -1,12 +1,14 @@
 version: '2'
 services:
     jenkins:
-        image: "jenkinsci/jenkins:2.0-rc-1"
+        build: ./jenkins
         ports:
             - "18080:8080"
             - "50000:50000"
         environment:
             - INITIAL_ADMIN_PW=test
+        volumes:
+            -
     #jenkins:
      #   container_name: "jenkins_container"
       #  build: ./jenkins
