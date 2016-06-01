@@ -8,7 +8,7 @@ services:
         environment:
             - INITIAL_ADMIN_PW=test
         volumes:
-            -
+            - ../volumes/jenkins/jenkins_home:/var/jenkins_home
     #jenkins:
      #   container_name: "jenkins_container"
       #  build: ./jenkins
